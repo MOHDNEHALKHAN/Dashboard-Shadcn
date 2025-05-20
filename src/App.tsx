@@ -1,14 +1,7 @@
-
-import './App.css'
+import DashboardPage from "@/app/dashboard/Page"
 
 function App() {
-  
-
-  return (
-    <>
-    <h1>Hello</h1>
-    </>
-  )
+  return <DashboardPage />
 }
 
 export default App
