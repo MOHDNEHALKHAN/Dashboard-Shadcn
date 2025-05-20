@@ -1,76 +1,75 @@
-# Dashboard Application
+# 🧪 React Dashboard — ShadCN UI + Vite + TypeScript
 
-A modern dashboard application for data visualization and management.
-
-## Table of Contents
-
-- [Project Structure](#project-structure)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+A responsive and modern dashboard built using [ShadCN UI](https://ui.shadcn.com/), Vite, and TypeScript. This project includes a collapsible sidebar, data table, chart visualization, and clean component architecture — inspired by the assignment spec.
 
 ---
 
-## Project Structure
+## 🛠️ Tech Stack
 
-```
-/Dashboard
-├── public/                 # Static files (index.html, favicon, etc.)
-├── src/
-│   ├── app/dashboard ├──Page.tsx
-|   |                 |-data.json
-│   ├── components/         # shadcn Reusable UI components   
-│   ├── hooks/              # Custom React hooks
-│   ├── App.tsx   
-|   ├── main.tsx        # Main application component
-│   ├── index.js            # Entry point
-│   └── styles/             # Global and component styles
-├── .env                    # Environment variables
-├── .gitignore
-├── package.json
-├── README.md
-└── yarn.lock / package-lock.json
-```
-
+- ⚛️ **React** (v18+)
+- ⚡ **Vite** (super fast bundler)
+- ⛓️ **TypeScript**
+- 🧩 **ShadCN UI** (Radix + Tailwind + Next-inspired components)
+- 🎨 **Tailwind CSS**
+- 📊 **Recharts** (charts)
 ---
 
-## Features
-
-- Interactive dashboards
-- Data visualization (charts, graphs)
-- User authentication
-- Responsive design
-- API integration
-
----
-
-## Installation
+## 📁 Project Structure
 
 ```bash
-git clone https://github.com/yourusername/Dashboard.git
-cd Dashboard
+src/
+├── app/
+│   └── dashboard/
+│       ├── page.tsx
+│       └── data.json
+├── components/
+│   ├── app-sidebar.tsx
+│   ├── chart-area-interactive.tsx
+│   ├── data-table.tsx
+│   ├── section-cards.tsx
+│   ├── site-header.tsx
+│   └── ui/ (shadcn blocks)
+├── hooks/
+│   └── use-mobile.ts
+├── App.tsx
+└── main.tsx
+````
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/MOHDNEHALKHAN/Dashboard-Shadcn.git
+cd Dashboard-Shadcn
+```
+
+### 2. Install Dependencies
+
+```bash
 npm install
+# or
+yarn
 ```
 
----
-
-## Usage
+### 3. Start the Development Server
 
 ```bash
-npm start
+npm run dev
 ```
-Open your browser and navigate to `http://localhost:3000`.
+
+Visit `http://localhost:5173` in your browser.
 
 ---
 
-## Contributing
+## 🧪 Scripts
 
-Contributions are welcome! Please open an issue or submit a pull request.
+| Script            | Description              |
+| ----------------- | ------------------------ |
+| `npm run dev`     | Start local dev server   |
+| `npm run build`   | Create production build  |
+| `npm run preview` | Preview production build |
 
 ---
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
